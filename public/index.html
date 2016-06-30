@@ -18,8 +18,13 @@
       }
 
       .rsk-widget-counter {
+        background-color: #8AC426;
+        color: white;
         flex: 1 10vh;
-        padding: 0 15px;
+        max-height: 48px;
+        padding: 0 30px;
+        justify-content: center;
+
       }
 
       .rsk-widget-list {
@@ -40,6 +45,7 @@
 
       .rsk-widget-form {
         flex: 1 10vh;
+        justify-content: center;
         padding: 0 15px;
       }
 
@@ -56,29 +62,24 @@
         outline: none;
       }
 
-      .rsk-widget {
-        display: flex;
-        flex-direction: row;
-        padding: 15px 0 15px 15px;
+      .rsk-widget > .widget-row {
+          display: flex;
+          flex-direction: row;
+          padding: 15px 0 15px 15px;
       }
 
-      .rsk-widget > div {
-        display: flex;
-        flex-direction: row;
-      }
-
-      .rsk-widget > .widget-avatar {
+      .rsk-widget .widget-avatar {
         flex: 1 32px;
         justify-content: flex-end;
         margin-right: 6px;
       }
 
-      .rsk-widget > .widget-avatar img {
+      .rsk-widget .widget-avatar img {
         height: 32px;
         border-radius: 3px;
       }
 
-      .rsk-widget > .widget-body {
+      .rsk-widget .widget-body {
         flex: 1 100%;
         overflow: hidden;
         border-radius: 3px;
@@ -90,7 +91,7 @@
         white-space: pre-wrap;
       }
 
-      .rsk-widget > .btn {
+      .rsk-widget .btn {
         flex: 1 32px;
         justify-content: center;
         height: 32px;
@@ -98,7 +99,7 @@
         margin: 0 6px;
       }
 
-      .rsk-widget > .btn-delete {
+      .rsk-widget .btn-delete {
         margin: 0;
       }
 
@@ -118,7 +119,7 @@
         opacity: 0;
       }
 
-      .fa {
+      .fa-trash-o, .fa-pencil {
         cursor: pointer;
       }
 
@@ -133,7 +134,6 @@
       .timestamp, .timestamp .fa:hover {
         font-size: 14px;
         color: gainsboro;
-        cursor: default;
       }
 
       .expand-enter, .expand-leave {
@@ -160,8 +160,6 @@
         max-height: 0;
         opacity: 1;
       }
-
-
     </style>
     <title>Relay • Starter Kit</title>
   </head>
@@ -173,6 +171,6 @@
       self.fetch = null;
     </script>
     <script src="http://localhost:3000/webpack-dev-server.js"></script>
-    <script src="js/app.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

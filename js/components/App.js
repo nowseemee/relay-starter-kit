@@ -4,9 +4,9 @@ import AddWidgetMutation from '../mutations/AddWidgetMutation';
 import UpdateWidgetMutation from '../mutations/UpdateWidgetMutation';
 import RemoveWidgetMutation from '../mutations/RemoveWidgetMutation';
 import AppState from './AppState';
-import WidgetList from './WidgetList';
-import InputForm from './InputForm';
-import WidgetCounter from './WidgetCounter';
+import WidgetList from './WidgetList/WidgetList';
+import InputForm from './InputForm/InputForm';
+import WidgetCounter from './WidgetCounter/WidgetCounter';
 
 class App extends React.Component {
   widgetAdd(event) {

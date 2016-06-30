@@ -1,13 +1,9 @@
 import React from 'react';
-import Widget from './Widget/index';
+import Widget from '../Widget/index';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
 class WidgetList extends React.Component {
-  scrollToBottom() {
-    this.refs.rskWidgetList.scrollTop = this.refs.rskWidgetList.scrollHeight;
-  }
-
   componentDidMount() {
     this.refs.rskWidgetList.scrollTop = this.refs.rskWidgetList.scrollHeight
   }

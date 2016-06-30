@@ -6,7 +6,8 @@
   "version": "0.1.0",
   "scripts": {
     "start": "babel-node ./server.js",
-    "update-schema": "babel-node ./scripts/updateSchema.js"
+    "update-schema": "babel-node ./scripts/updateSchema.js",
+    "test": "mocha --require tests.config.js js/**/*.spec.js"
   },
   "dependencies": {
     "babel-core": "6.9.0",
@@ -32,6 +33,13 @@
     "webpack-dev-server": "1.14.1"
   },
   "devDependencies": {
-    "babel-cli": "6.9.0"
+    "babel-cli": "6.9.0",
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "enzyme": "^2.3.0",
+    "jsdom": "^9.3.0",
+    "mocha": "^2.5.3",
+    "react-addons-test-utils": "^15.1.0",
+    "sinon": "^1.17.4"
   }
 }

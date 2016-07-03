@@ -26,8 +26,8 @@
     "graphql-relay": "0.4.2",
     "moment": "^2.13.0",
     "react": "15.1.0",
-    "react-addons-css-transition-group": "^15.1.0",
-    "react-dom": "15.1.0",
+    "react-addons-css-transition-group": "15.0.0",
+    "react-dom": "15.0.0",
     "react-relay": "0.9.1",
     "require-clean": "0.1.3",
     "webpack": "1.13.1",
@@ -40,7 +40,7 @@
     "enzyme": "^2.3.0",
     "jsdom": "^9.3.0",
     "mocha": "^2.5.3",
-    "react-addons-test-utils": "^15.1.0",
+    "react-addons-test-utils": "15.0.0",
     "sinon": "^1.17.4"
   }
 }
